@@ -14,19 +14,15 @@ class ChessBoard extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: List.generate(
-          5,
-          (int index){
-            return rowWidget(index + 1);
-          } 
-        ),
+        children: List.generate(5, (int index) {
+          return rowWidget(index + 1);
+        }),
       ),
     );
   }
 
-  Row rowWidget(int rowNumber){
-
-    if(rowNumber%2 == 0){
+  Row rowWidget(int rowNumber) {
+    if (rowNumber % 2 == 0) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -37,8 +33,7 @@ class ChessBoard extends StatelessWidget {
           boxWidget(const Color.fromARGB(255, 39, 101, 138)),
         ],
       );
-    }
-    else{
+    } else {
       return Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -52,7 +47,7 @@ class ChessBoard extends StatelessWidget {
     }
   }
 
-  Widget boxWidget(Color color){
+  Widget boxWidget(Color color) {
     return Container(
       height: 60,
       width: 60,
