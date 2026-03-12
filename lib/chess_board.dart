@@ -6,10 +6,18 @@ class ChessBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 4, 4, 41),
+      backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       appBar: AppBar(
-        title: const Text("Chess Board Assignment"),
-        backgroundColor: const Color.fromARGB(255, 2, 2, 1),
+        title: const Text(
+          "Chess Board",
+          style: TextStyle(
+            color: Color.fromARGB(255, 0, 0, 0),
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         centerTitle: true,
       ),
       body: Column(
