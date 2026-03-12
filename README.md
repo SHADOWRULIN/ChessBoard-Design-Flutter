@@ -28,12 +28,12 @@ This repository focuses on the architectural design of a chess board, ensuring a
    ```bash
    git clone https://github.com/SHADOWRULIN/ChessBoard-Design-Flutter.git
    
-3. **Navigate to the folder:**
+2. **Navigate to the folder:**
    
    ```bash
-   cd chess_board
+   cd ChessBoard-Design-Flutter
    
-4. **Run for Web:**
+3. **Run for Web:**
    
    ```bash
    flutter run -d chrome
